@@ -9,6 +9,7 @@
 // @match        https://copymanga.org/comic/*/chapter/*
 // @icon         http://manhua.dmzj.com/favicon.ico
 // @grant        none
+// @downloadURL  https://github.com/HonestFox101/Comic-Reader-Plugin/raw/master/%E6%BC%AB%E7%94%BB%E9%98%85%E8%AF%BB%E5%99%A8.user.js
 // ==/UserScript==
 
 (function () {
