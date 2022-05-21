@@ -304,7 +304,7 @@
         }
 
         async previous_episode() {
-            let href = document.querySelector("body > div.footer > div.comicContent-prev > a").href
+            let href = document.querySelector(".comicContent-prev:not(.index) > a").href
             if (!href) {
                 return
             }
