@@ -83,8 +83,8 @@
               #menu > div {
                 border: 2px solid white;
                 background-color: black;
-                width: 20px;
-                height: 20px;
+                width: 25px;
+                height: 25px;
                 font-size: 15px;
                 text-align: center;
                 vertical-align: middle;
