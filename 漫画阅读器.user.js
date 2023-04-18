@@ -5,8 +5,7 @@
 // @description  客制化双页阅读器
 // @author       Sedna
 // @match        http*://manhua.dmzj.com/*/*.shtml*
-// @match        https://copymanga.com/comic/*/chapter/*
-// @match        https://copymanga.org/comic/*/chapter/*
+// @match        https://*copymanga.*/comic/*/chapter/*
 // @icon         http://manhua.dmzj.com/favicon.ico
 // @grant        none
 // @downloadURL  https://github.com/HonestFox101/Comic-Reader-Plugin/raw/master/%E6%BC%AB%E7%94%BB%E9%98%85%E8%AF%BB%E5%99%A8.user.js
@@ -23,7 +22,7 @@
             this.fit_width = 0
             this.fit_height = 0
             this.active = true
-            
+
             this.initial_style()
             this.initial_element_tree()
             this.fetch_img_src_list()
@@ -316,7 +315,7 @@
     setTimeout(() => {
         if (document.location.hostname == 'manhua.dmzj.com') {
             let app = new DMZJComicReader()
-        } else if (document.location.hostname == 'copymanga.com' || document.location.hostname == 'copymanga.org') {
+        } else if (document.location.hostname.match(/copymanga.*/g)) {
             let app = new CopyMangaComicReader()
         }
     }, 1000)
