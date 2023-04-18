@@ -65,7 +65,7 @@
                 width: 100%;
                 height: 100%;
                 top: 0px;
-                image-rendering: pixelated;
+                image-rendering: auto;
               }
 
               #menu {
