@@ -30,8 +30,8 @@
             this.menu = document.querySelector('#menu')
             this.comic_reader = document.querySelector('#comic-reader')
 
-            this.fit_width = window.screen.availWidth / 2 - 25
-            this.fit_height = window.screen.availHeight - 45
+            this.fit_width = window.innerWidth / 2
+            this.fit_height = window.innerHeight
 
             this.on_page_change(0)
         }
@@ -67,7 +67,6 @@
                 top: 0px;
                 image-rendering: auto;
               }
-
               #menu {
                 position: fixed;
                 top: 10px;
@@ -79,7 +78,6 @@
                 max-width: 30px;
                 opacity: 75%;
               }
-
               #menu > div {
                 border: 2px solid white;
                 background-color: black;
@@ -92,15 +90,12 @@
                 margin: 3px;
                 border-radius: 5px;
               }
-
               #main-button ~ div {
                 display: none;
               }
-
               #menu:hover > div {
                 display: unset
               }
-
               #menu > div:hover {
                 background-color: white;
                 color: black;
